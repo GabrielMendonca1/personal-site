@@ -1,16 +1,17 @@
 'use client';
 
 import { useState, useMemo } from 'react';
-import { usePathname, useRouter } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 import ContactModal from './ContactModal';
+import { useLocaleTransition } from '@/components/LocaleTransitionProvider';
 import { useTranslations } from '@/contexts/TranslationContext';
 import { locales, type Locale } from '@/i18n/config';
 
 export default function Header() {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
   const { dictionary, locale } = useTranslations();
+  const { animateLocaleChange, isLocaleTransitioning } = useLocaleTransition();
   const router = useRouter();
-  const pathname = usePathname();
 
   const localeOptions = useMemo<Array<{ value: Locale; label: string }>>(
     () =>
@@ -21,20 +22,17 @@ export default function Header() {
     [],
   );
 
-  const handleLocaleChange = (targetLocale: Locale) => {
-    if (!pathname || targetLocale === locale) {
+  const handleLocaleChange = async (targetLocale: Locale) => {
+    if (targetLocale === locale || isLocaleTransitioning) {
       return;
     }
 
-    const segments = pathname.split('/').filter(Boolean);
-    if (segments.length === 0) {
-      router.push(`/${targetLocale}`);
-      return;
-    }
-
-    segments[0] = targetLocale;
-    const nextPath = `/${segments.join('/')}`;
-    router.push(nextPath);
+    const transition = animateLocaleChange();
+    const maxAge = 60 * 60 * 24 * 365;
+    const secureAttribute = window.location.protocol === 'https:' ? '; Secure' : '';
+    document.cookie = `locale=${targetLocale}; path=/; max-age=${maxAge}; SameSite=Lax${secureAttribute}`;
+    router.refresh();
+    await transition;
   };
 
   return (
@@ -52,7 +50,8 @@ export default function Header() {
                     key={option.value}
                     type="button"
                     onClick={() => handleLocaleChange(option.value)}
-                    className={`px-3 py-1 text-xs font-medium rounded-full transition-all ${
+                    disabled={isLocaleTransitioning}
+                    className={`px-3 py-1 text-xs font-medium rounded-full transition-all disabled:cursor-not-allowed disabled:opacity-60 ${
                       isActive
                         ? 'bg-[var(--text-primary)] text-[var(--background)]'
                         : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]'

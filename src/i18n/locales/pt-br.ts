@@ -4,7 +4,7 @@ export const dictionary: Dictionary = {
   metadata: {
     title: "Gabriel®",
     description:
-      "Gabriel Mendonça - Desenvolvedor apaixonado pela beleza do minimalismo digital",
+      "",
   },
   layout: {
     brandName: "Gabriel®",
@@ -13,12 +13,11 @@ export const dictionary: Dictionary = {
     contactCta: "Contato",
   },
   hero: {
-    sectionTitle: "Sobre mim",
     paragraphs: [
-      "Desenvolvedor apaixonado pela beleza do minimalismo digital. Acredito na força de soluções simples, visuais claros e experiências de usuário que inspiram e funcionam.",
-      "Com experiência em design UX/UI, desenvolvimento front-end e back-end, busco criar produtos que equilibram eficiência, acessibilidade e impacto visual.",
+      "Sou movido por ideias, pela força da natureza e pelo brilho humano que surge nos encontros verdadeiros. Trago comigo valores de honestidade e respeito, e um desejo constante de inspirar outros a não aceitarem a mediocridade, mas a buscarem deixar suas marcas na história.",
+      "É na cooperação, nos projetos compartilhados e nos momentos com aqueles que amo que encontro meu sentido de estar vivo."
     ],
-    signatureAlt: "Assinatura de Gabriel",
+    signatureAlt: "Assinatura",
     avatarLabel: "Ícone de perfil",
   },
   experience: {
@@ -27,16 +26,16 @@ export const dictionary: Dictionary = {
       {
         company: "ACCENTURE",
         period: "06/2025",
-        role: "Trainee",
+        role: "Estagiario",
         description:
-          "Como freelancer na AFPA, trabalhei na área de Social Media e TI. Essas experiências me permitiram desenvolver habilidades na resolução de problemas e gerenciamento de dados.",
+          "A accenture me mostrou como e impactante e realmente outro nivel trabalhar em uma empresa de nivel global, dando manutencao e desenvolvendo com SAP",
       },
       {
         company: "SYSTEMA",
         period: "06/2024 - 06/2025",
-        role: "Trainee",
+        role: "Estagiario",
         description:
-          "Estou tendo a oportunidade de trabalhar em projetos de grandes empresas e também aprendendo com os melhores, desenvolvendo back-end e front-end, desde sistemas legados até aplicações modernas.",
+          "Na Systema, tive a chance de crescer rápido. Participei de projetos para grandes empresas, aprendi diretamente com profissionais muito experientes e pude colocar a mão na massa em tudo, desde sistemas mais antigos até aplicações modernas. Esse contato diverso me deu confiança para enfrentar qualquer desafio, entendendo que cada tecnologia e cada projeto têm seu valor, uma experiencia de moldar maturidade na area.",
       },
       {
         company: "WG",
@@ -87,7 +86,7 @@ export const dictionary: Dictionary = {
         name: "ICE",
         imageryLabel: "Inovative Compute Enterprise",
         description:
-          "Empresa de desenvolvimento e  de tecnologia para empresas e pessoas , com foco em inovacao e efciencia, com servicos B2B e B2C.",
+          "Empresa de desenvolvimento tecnologico para empresas e pessoas , com foco em inovacao e efciencia, com servicos B2B e B2C.",
         badges: ["B2B", "Tech", "IA"],
         primaryActionLabel: "Compreender",
         primaryActionHref: "https://iceoficial.com/",
@@ -96,9 +95,9 @@ export const dictionary: Dictionary = {
         name: "Omni",
         imageryLabel: "IA",
         description:
-          "Ferramenta de IAs agentes ",
-        badges: ["UI/UX", "Desktop", "Produto real"],
-        primaryActionLabel: "Ver no Figma",
+          "Ferramenta com intencao de acelear a produtividade de qualquer pessoa em qualquer area, usando arquitetura agent e com diversas ferramentas com uso aplicado de modelos para tarefas expecificas exepicionais de cada 1",
+        badges: ["IA", "Agent"],
+        primaryActionLabel: "Testar",
         primaryActionHref: "https://example.com/omni",
       },
     ],
@@ -109,7 +108,9 @@ export const dictionary: Dictionary = {
     emailValue: "gabrielrm.email@gmail.com",
     linkedinLabel: "LinkedIn",
     linkedinValue: "https://www.linkedin.com/in/gabriel-ribeiro-mendon%C3%A7a-910692269/",
+    linkedinText: "Visitar LinkedIn",
     githubLabel: "GitHub",
     githubValue: "github.com/gabriel",
+    githubText: "Abrir GitHub",
   },
 };

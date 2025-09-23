@@ -38,3 +38,19 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+.locale-transition {
+  opacity: 1;
+  transition: opacity 0.28s ease;
+  will-change: opacity;
+}
+
+.locale-transition--hidden {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .locale-transition {
+    transition-duration: 0.001s;
+  }
+}

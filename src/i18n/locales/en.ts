@@ -100,7 +100,9 @@ export const dictionary: Dictionary = {
     emailValue: "gabriel@exemplo.com",
     linkedinLabel: "LinkedIn",
     linkedinValue: "linkedin.com/in/gabriel",
+    linkedinText: "View LinkedIn",
     githubLabel: "GitHub",
     githubValue: "github.com/gabriel",
+    githubText: "Open GitHub",
   },
 };

@@ -25,7 +25,7 @@ export default function ProjectsSection({ content }: ProjectsSectionProps) {
                   </div>
                 </div>
 
-                <div className="space-y-4">
+                <div className="space-y-4 mb-9">
                   <h3 className="text-[var(--text-primary)] text-xl font-bold">{project.name}</h3>
 
                   <p className="text-[var(--text-muted)] text-[15px] leading-relaxed">

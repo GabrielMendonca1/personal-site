@@ -33,7 +33,6 @@ export type Dictionary = {
     contactCta: string;
   };
   hero: {
-    sectionTitle: string;
     paragraphs: string[];
     signatureAlt: string;
     avatarLabel: string;
@@ -56,7 +55,9 @@ export type Dictionary = {
     emailValue: string;
     linkedinLabel: string;
     linkedinValue: string;
+    linkedinText?: string;
     githubLabel: string;
     githubValue: string;
+    githubText?: string;
   };
 };
