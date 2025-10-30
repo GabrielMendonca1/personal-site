@@ -3,44 +3,43 @@ import type { Dictionary } from "../types";
 export const dictionary: Dictionary = {
   metadata: {
     title: "Gabriel®",
-    description:
-      "New person, same old mistakes.",
+    description: "New person, same old mistakes.",
   },
   layout: {
     brandName: "Gabriel",
   },
   header: {
-    contactCta: "Contato",
+    contactCta: "Contact",
   },
   hero: {
     paragraphs: [
-      "Sou movido por ideias, pela natureza e o brilho humano nos encontros autênticos. Trago comigo valores de honestidade e respeito, e um desejo constante de inspirar outros – não aceito mediocridade, nem minha nem de ninguém, apenas a busca pela melhor versão.",
-      "É na cooperação genuína, criando projetos que importam, e nos momentos reais com aqueles que amo que encontro meu sentido de estar vivo."
-      ],
-    signatureAlt: "Assinatura",
-    avatarLabel: "Ícone de perfil",
+      "I am moved by ideas, by nature, and by the human spark that emerges in authentic encounters. I carry with me values of honesty and respect, along with a constant desire to inspire others – I do not accept mediocrity, neither mine nor anyone’s. Only the pursuit of the best version possible.",
+      "It is in genuine cooperation, in building projects that matter, and in real moments with those I love that I find my sense of being alive."
+    ],
+    signatureAlt: "Signature",
+    avatarLabel: "Profile icon",
     avatarImage: {
       src: "/profile.png",
-      alt: "Foto",
+      alt: "Photo",
     },
   },
   experience: {
-    sectionTitle: "Experiência",
+    sectionTitle: "Experience",
     entries: [
       {
         company: "ACCENTURE",
         period: "06/2025",
         role: "Trainee",
         description:
-          "Atuo em uma das maiores consultorias globais, com mais de 600 mil funcionários em 120+ países, onde desenvolvo soluções tecnológicas inovadoras em um ambiente verdadeiramente multicultural. Possuo sólida experiência em metodologias de desenvolvimento para industria e colaboração direta com clientes internacionais, entregando resultados que impulsionam a transformação digital dos negócios.",
+          "I work in one of the largest global consulting firms, with more than 600 thousand employees in 120+ countries, where I develop innovative technological solutions in a truly multicultural environment. I have solid experience in development methodologies for the industry and direct collaboration with international clients, delivering results that drive the digital transformation of businesses.",
         companyHref: "https://www.accenture.com/",
         logo: {
           src: "/logos/accenture.svg",
-          alt: "Logo da Accenture",
+          alt: "Accenture Logo",
         },
         country: {
           src: "/flags/european-union.svg",
-          alt: "Bandeira da União Europeia",
+          alt: "European Union Flag",
         },
       },
       {
@@ -48,15 +47,15 @@ export const dictionary: Dictionary = {
         period: "06/2024 - 06/2025",
         role: "Trainee",
         description:
-          "Participei de projetos para grandes empresas, aprendi diretamente com profissionais muito experientes e pude colocar a mão na massa em tudo, desde sistemas mais antigos até aplicações modernas criando uma base de desenvolvimento de software para Automação e Manufatura na Indústria com SAP",
+          "I participated in projects for large companies, learning directly from highly experienced professionals. I worked across a wide range of systems, from legacy applications to modern solutions, building a strong foundation in software development for Automation and Manufacturing in the industry with SAP.",
         companyHref: "https://www.systema.com/",
         logo: {
           src: "/logos/systema.svg",
-          alt: "Logo da Systema",
+          alt: "Systema Logo",
         },
         country: {
           src: "/flags/germany.svg",
-          alt: "Bandeira da Alemanha",
+          alt: "Germany Flag",
         },
       },
       {
@@ -64,91 +63,91 @@ export const dictionary: Dictionary = {
         period: "2021 - 2024",
         role: "Freelancer",
         description:
-          "Na WG, uma representante de calçados com mais de 30 anos de mercado, tive a oportunidade de trabalhar em projetos como criação e manutenção de um site, desenvolvi minhas habilidades em cloud na construção de um back-end estrutural da empresa para gerenciamento de dados e notas fiscais.",
+          "At WG, a footwear representative company with over 30 years in the market, I had the opportunity to work on projects such as creating and maintaining a website, as well as developing cloud-based internal systems, building a backend structure for data and invoice management.",
         companyHref: "https://www.wg.com.br/",
         logo: {
           src: "/logos/wg.svg",
-          alt: "Logo da WG",
+          alt: "WG Logo",
         },
         country: {
           src: "/flags/brazil.svg",
-          alt: "Bandeira do Brasil",
+          alt: "Brazil Flag",
         },
       },
     ],
   },
   education: {
-    sectionTitle: "Formação",
+    sectionTitle: "Education",
     entries: [
       {
         institution: "UCSAL",
         period: "2021 - 2026/6",
-        degree: "Curso Engenharia de Software",
+        degree: "Software Engineering",
         description:
-          "Curso Engenharia de Software na UCSal, instituição reconhecida pela excelência acadêmica e formação de profissionais qualificados em tecnologia. O curso proporciona base sólida em programação, design de interfaces, engenharia de requisitos, testes, desenvolvimento ágil e segurança cibernética.",
+          "Software Engineering at UCSal, an institution recognized for academic excellence and the preparation of highly qualified technology professionals. The course provides a solid foundation in programming, interface design, requirements engineering, testing, agile development, and cybersecurity.",
       },
       {
         institution: "HarvardX CS50x",
         period: "2022 - 2023",
-        degree: "Introdução à Ciência da Computação",
+        degree: "Introduction to Computer Science",
         description:
-          "Concluí o curso CS50x da Universidade de Harvard, uma introdução intensiva e renomada à ciência da computação. Este curso aprimorou minha capacidade de resolver problemas complexos por meio do pensamento computacional, uma habilidade essencial para o desenvolvimento eficaz de software.",
+          "I completed the CS50x course from Harvard University, an intensive and globally recognized introduction to Computer Science. The course strengthened my ability to solve complex problems through computational thinking, an essential skill for effective software development.",
       },
       {
         institution: "Cultura Inglesa",
         period: "2012 -",
-        degree: "Inglês Fluente",
+        degree: "Fluent English",
         description:
-          "Comecei a aprender inglês aos 6 anos no colégio, completei o nível Avançado na Cultura Inglesa e aprimorei o idioma em viagens internacionais, mantendo contato contínuo com o inglês.",
+          "I began learning English at age 6 during school, completed the Advanced level at Cultura Inglesa, and improved my language skills through international travel, maintaining continuous contact with English.",
       },
       {
         institution: "One Bit Code Pro",
         period: "2021 - 2023",
-        degree: "Programa Completo de Desenvolvimento",
+        degree: "Complete Development Program",
         description:
-          "Participei do One Bit Code Pro, um programa completo que cobriu Front-End, Back-End, Mobile, Python, Ruby, Ruby on Rails e No Code.",
+          "I participated in the One Bit Code Pro program, a complete track covering Front-End, Back-End, Mobile, Python, Ruby, Ruby on Rails, and No Code.",
       },
     ],
   },
   projects: {
-    sectionTitle: "Projetos",
+    sectionTitle: "Projects",
     entries: [
       {
         name: "ICE",
-        image: { src: '/projects/ICE-B-1.png', alt: 'Homepage da ICE' },
+        image: { src: '/projects/ICE-B-1.png', alt: 'ICE Homepage' },
         description:
-          "Startup de deep tech com a missão de implementar IA de forma estratégica e escalável. Oferecemos soluções personalizadas para +3 empresas B2B e B2C em 2 países.",
+          "Deep tech startup with the mission of implementing AI strategically and at scale. We deliver customized solutions for 3+ B2B and B2C companies across 2 countries.",
         badges: ["B2B", "B2C"],
-        primaryActionLabel: "Ver",
+        primaryActionLabel: "View",
         primaryActionHref: "https://iceoficial.com/",
       },
       {
         name: "Omni",
-        image: { src: '/projects/Omni-B-2.png', alt: 'Homepage da ICE' },
+        image: { src: '/projects/Omni-B-2.png', alt: 'Omni Homepage' },
         description:
-          "Ecossistema de agentes de IA que democratiza o acesso à inteligência artificial. Combinamos diversos modelos e ferramentas especializadas em uma interface intuitiva, atendendo +1000 usuários com soluções práticas.",
-        badges: ["IA", "Agentes"],
-        primaryActionLabel: "Testar",
+          "AI agent ecosystem that democratizes access to artificial intelligence. We combine multiple models and specialized tools in a single intuitive interface, serving 1000+ users with practical solutions.",
+        badges: ["AI", "Agents"],
+        primaryActionLabel: "Try",
         primaryActionHref: "https://omni-xi.vercel.app/",
       },
     ],
   },
   contact: {
-    title: "Contato",
+    title: "Contact",
     emailLabel: "Email",
     emailValue: "gabrielrm.email@gmail.com",
     linkedinLabel: "LinkedIn",
     linkedinValue: "https://www.linkedin.com/in/gabriel-ribeiro-mendon%C3%A7a-910692269/",
-    linkedinText: "Visitar LinkedIn",
+    linkedinText: "Visit LinkedIn",
     githubLabel: "GitHub",
     githubValue: "github.com/gabriel",
-    githubText: "Abrir GitHub",
+    githubText: "Open GitHub",
   },
   footer: {
     quote: {
-      text: "A imaginação é o combustível que move cada linha de código.",
+      text: "Imagination is the fuel that drives every line of code.",
       author: "Gabriel Ribeiro Mendonça",
     },
-    copyright: "© {year} Gabriel®. Todos os direitos reservados.",
+    copyright: "© {year} Gabriel®. All rights reserved.",
   },
 };
