@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 import Signature from './Signature';
 import type { Dictionary } from '@/i18n/types';
 
@@ -7,21 +9,32 @@ type HeroSectionProps = {
 
 export default function HeroSection({ content }: HeroSectionProps) {
   return (
-    <section className="bg-[var(--background)] text-[var(--text-primary)] relative overflow-hidden pb-20 pt-40">
+    <section className="bg-[var(--background)] text-[var(--text-primary)] relative overflow-hidden pb-20 md:pt-40 pt-20">
       <div className="flex items-center justify-center p-8">
         <div className="max-w-4xl w-full flex items-center justify-between relative">
           <div className="flex-1 max-w-md">
             <div className="mb-10">
-              <div className="w-12 h-12 bg-[var(--surface)] rounded-full mb-2 flex items-center justify-center">
-                <svg
-                  className="w-8 h-8 text-[var(--text-muted)]"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  role="img"
-                  aria-label={content.avatarLabel}
-                >
-                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                </svg>
+              <div className="w-14 h-14 bg-[var(--surface)] rounded-full mb-2 flex items-center justify-center overflow-hidden">
+                {content.avatarImage ? (
+                  <Image
+                    src={content.avatarImage.src}
+                    alt={content.avatarImage.alt}
+                    width={64}
+                    height={64}
+                    className="h-full w-full object-cover"
+                    priority
+                  />
+                ) : (
+                  <svg
+                    className="w-8 h-8 text-[var(--text-muted)]"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    role="img"
+                    aria-label={content.avatarLabel}
+                  >
+                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                  </svg>
+                )}
               </div>
 
               <div className="mb-4">
@@ -62,8 +75,6 @@ export default function HeroSection({ content }: HeroSectionProps) {
               </div>
             </div>
           </div>
-
-          <div className="flex-1"></div>
         </div>
       </div>
     </section>

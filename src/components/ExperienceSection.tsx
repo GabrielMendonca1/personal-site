@@ -38,7 +38,7 @@ export default function ExperienceSection({ content }: ExperienceSectionProps) {
                           </span>
                         ) : null}
                         {entry.country?.src ? (
-                          <span className="inline-flex h-7 w-7 items-center justify-center overflow-hidden rounded-full border border-[var(--border)] bg-[var(--surface)] p-1">
+                          <span className="inline-flex h-7 w-7 items-center justify-center overflow-hidden rounded-full p-1">
                             <Image
                               src={entry.country.src}
                               alt={entry.country.alt}

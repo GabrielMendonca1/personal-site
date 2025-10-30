@@ -45,6 +45,10 @@ export type Dictionary = {
     paragraphs: string[];
     signatureAlt: string;
     avatarLabel: string;
+    avatarImage?: {
+      src: string;
+      alt: string;
+    };
   };
   experience: {
     sectionTitle: string;

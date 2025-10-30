@@ -19,6 +19,10 @@ export const dictionary: Dictionary = {
       ],
     signatureAlt: "Assinatura",
     avatarLabel: "Ícone de perfil",
+    avatarImage: {
+      src: "/profile.png",
+      alt: "Foto",
+    },
   },
   experience: {
     sectionTitle: "Experiência",
@@ -28,7 +32,7 @@ export const dictionary: Dictionary = {
         period: "06/2025",
         role: "Trainee",
         description:
-          "Atuo em uma das maiores consultorias globais, com mais de 600 mil funcionários em 120+ países, onde desenvolvo soluções tecnológicas inovadoras em um ambiente verdadeiramente multicultural. Possuo sólida experiência em metodologias de desenvolvimento para industria e colaboração direta com clientes internacionais, entregando resultados que impulsionam a transformação digital dos negócios.",
+          "Atuo como trainee na Accenture, uma das maiores consultorias globais de TI e transformação digital (mais de 600 mil funcionários em 120+ países), onde crio soluções tecnológicas inovadoras usando SAP em um ambiente genuinamente multicultural.",
         companyHref: "https://www.accenture.com/",
         logo: {
           src: "/logos/accenture.svg",
@@ -79,14 +83,14 @@ export const dictionary: Dictionary = {
       {
         institution: "UCSAL",
         period: "2021 - 2026/6",
-        degree: "Curso Engenharia de Software",
+        degree: "Engenharia de Software",
         description:
           "Curso Engenharia de Software na UCSal, instituição reconhecida pela excelência acadêmica e formação de profissionais qualificados em tecnologia. O curso proporciona base sólida em programação, design de interfaces, engenharia de requisitos, testes, desenvolvimento ágil e segurança cibernética.",
       },
       {
         institution: "HarvardX CS50x",
         period: "2022 - 2023",
-        degree: "Introdução à Ciência da Computação",
+        degree: "Ciência da Computação",
         description:
           "Concluí o curso CS50x da Universidade de Harvard, uma introdução intensiva e renomada à ciência da computação. Este curso aprimorou minha capacidade de resolver problemas complexos por meio do pensamento computacional, uma habilidade essencial para o desenvolvimento eficaz de software.",
       },
@@ -111,7 +115,7 @@ export const dictionary: Dictionary = {
     entries: [
       {
         name: "ICE",
-        image: { src: '/projects/ICE-B-2.png', alt: 'Homepage da ICE' },
+        image: { src: '/projects/ICE-B-2.png', alt: 'ICE' },
         description:
           "Startup de deep tech com a missão de implementar IA de forma estratégica e escalável. Oferecemos soluções personalizadas para +3 empresas B2B e B2C em 2 países.",
         badges: ["B2B", "B2C"],
@@ -120,7 +124,7 @@ export const dictionary: Dictionary = {
       },
       {
         name: "Omni",
-        image: { src: '/projects/Omni-B-2.png', alt: 'Homepage da ICE' },
+        image: { src: '/projects/Omni-B-2.png', alt: 'Omni' },
         description:
           "Ecossistema de agentes de IA que democratiza o acesso à inteligência artificial. Combinamos diversos modelos e ferramentas especializadas em uma interface intuitiva, atendendo +1000 usuários com soluções práticas.",
         badges: ["IA", "Agentes"],
@@ -137,7 +141,7 @@ export const dictionary: Dictionary = {
     linkedinValue: "https://www.linkedin.com/in/gabriel-ribeiro-mendon%C3%A7a-910692269/",
     linkedinText: "Visitar LinkedIn",
     githubLabel: "GitHub",
-    githubValue: "github.com/gabriel",
+    githubValue: "https://github.com/GabrielMendonca1",
     githubText: "Abrir GitHub",
   },
   footer: {

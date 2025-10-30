@@ -19,6 +19,10 @@ export const dictionary: Dictionary = {
       ],
     signatureAlt: "Assinatura",
     avatarLabel: "Ícone de perfil",
+    avatarImage: {
+      src: "/profile.png",
+      alt: "Foto",
+    },
   },
   experience: {
     sectionTitle: "Experiência",
