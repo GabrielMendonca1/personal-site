@@ -4,19 +4,19 @@ export const dictionary: Dictionary = {
   metadata: {
     title: "Gabriel®",
     description:
-      "",
+      "New person, same old mistakes.",
   },
   layout: {
-    brandName: "Gabriel®",
+    brandName: "Gabriel",
   },
   header: {
     contactCta: "Contato",
   },
   hero: {
     paragraphs: [
-      "Sou movido por ideias, pela força da natureza e pelo brilho humano que surge nos encontros verdadeiros. Trago comigo valores de honestidade e respeito, e um desejo constante de inspirar outros a não aceitarem a mediocridade, mas a buscarem deixar suas marcas na história.",
-      "É na cooperação, nos projetos compartilhados e nos momentos com aqueles que amo que encontro meu sentido de estar vivo."
-    ],
+      "Sou movido por ideias, pela natureza e o brilho humano nos encontros autênticos. Trago comigo valores de honestidade e respeito, e um desejo constante de inspirar outros – não aceito mediocridade, nem minha nem de ninguém, apenas a busca pela melhor versão.",
+      "É na cooperação genuína, criando projetos que importam, e nos momentos reais com aqueles que amo que encontro meu sentido de estar vivo."
+      ],
     signatureAlt: "Assinatura",
     avatarLabel: "Ícone de perfil",
   },
@@ -26,16 +26,34 @@ export const dictionary: Dictionary = {
       {
         company: "ACCENTURE",
         period: "06/2025",
-        role: "Estagiario",
+        role: "Trainee",
         description:
-          "A accenture me mostrou como e impactante e realmente outro nivel trabalhar em uma empresa de nivel global, dando manutencao e desenvolvendo com SAP",
+          "Atuo em uma das maiores consultorias globais, com mais de 600 mil funcionários em 120+ países, onde desenvolvo soluções tecnológicas inovadoras em um ambiente verdadeiramente multicultural. Possuo sólida experiência em metodologias de desenvolvimento para industria e colaboração direta com clientes internacionais, entregando resultados que impulsionam a transformação digital dos negócios.",
+        companyHref: "https://www.accenture.com/",
+        logo: {
+          src: "/logos/accenture.svg",
+          alt: "Logo da Accenture",
+        },
+        country: {
+          src: "/flags/european-union.svg",
+          alt: "Bandeira da União Europeia",
+        },
       },
       {
         company: "SYSTEMA",
         period: "06/2024 - 06/2025",
-        role: "Estagiario",
+        role: "Trainee",
         description:
-          "Na Systema, tive a chance de crescer rápido. Participei de projetos para grandes empresas, aprendi diretamente com profissionais muito experientes e pude colocar a mão na massa em tudo, desde sistemas mais antigos até aplicações modernas. Esse contato diverso me deu confiança para enfrentar qualquer desafio, entendendo que cada tecnologia e cada projeto têm seu valor, uma experiencia de moldar maturidade na area.",
+          "Participei de projetos para grandes empresas, aprendi diretamente com profissionais muito experientes e pude colocar a mão na massa em tudo, desde sistemas mais antigos até aplicações modernas criando uma base de desenvolvimento de software para Automação e Manufatura na Indústria com SAP",
+        companyHref: "https://www.systema.com/",
+        logo: {
+          src: "/logos/systema.svg",
+          alt: "Logo da Systema",
+        },
+        country: {
+          src: "/flags/germany.svg",
+          alt: "Bandeira da Alemanha",
+        },
       },
       {
         company: "WG",
@@ -43,6 +61,15 @@ export const dictionary: Dictionary = {
         role: "Freelancer",
         description:
           "Na WG, uma representante de calçados com mais de 30 anos de mercado, tive a oportunidade de trabalhar em projetos como criação e manutenção de um site, desenvolvi minhas habilidades em cloud na construção de um back-end estrutural da empresa para gerenciamento de dados e notas fiscais.",
+        companyHref: "https://www.wg.com.br/",
+        logo: {
+          src: "/logos/wg.svg",
+          alt: "Logo da WG",
+        },
+        country: {
+          src: "/flags/brazil.svg",
+          alt: "Bandeira do Brasil",
+        },
       },
     ],
   },
@@ -84,21 +111,21 @@ export const dictionary: Dictionary = {
     entries: [
       {
         name: "ICE",
-        imageryLabel: "Inovative Compute Enterprise",
+        image: { src: '/projects/ICE-B-2.png', alt: 'Homepage da ICE' },
         description:
-          "Empresa de desenvolvimento tecnologico para empresas e pessoas , com foco em inovacao e efciencia, com servicos B2B e B2C.",
-        badges: ["B2B", "Tech", "IA"],
-        primaryActionLabel: "Compreender",
+          "Startup de deep tech com a missão de implementar IA de forma estratégica e escalável. Oferecemos soluções personalizadas para +3 empresas B2B e B2C em 2 países.",
+        badges: ["B2B", "B2C"],
+        primaryActionLabel: "Ver",
         primaryActionHref: "https://iceoficial.com/",
       },
       {
         name: "Omni",
-        imageryLabel: "IA",
+        image: { src: '/projects/Omni-B-2.png', alt: 'Homepage da ICE' },
         description:
-          "Ferramenta com intencao de acelear a produtividade de qualquer pessoa em qualquer area, usando arquitetura agent e com diversas ferramentas com uso aplicado de modelos para tarefas expecificas exepicionais de cada 1",
-        badges: ["IA", "Agent"],
+          "Ecossistema de agentes de IA que democratiza o acesso à inteligência artificial. Combinamos diversos modelos e ferramentas especializadas em uma interface intuitiva, atendendo +1000 usuários com soluções práticas.",
+        badges: ["IA", "Agentes"],
         primaryActionLabel: "Testar",
-        primaryActionHref: "https://example.com/omni",
+        primaryActionHref: "https://omni-xi.vercel.app/",
       },
     ],
   },
@@ -112,5 +139,11 @@ export const dictionary: Dictionary = {
     githubLabel: "GitHub",
     githubValue: "github.com/gabriel",
     githubText: "Abrir GitHub",
+  },
+  footer: {
+    quote: {
+      text: "Pressure is a privilege.",
+    },
+    copyright: "© {year} Gabriel®. Todos os direitos reservados.",
   },
 };

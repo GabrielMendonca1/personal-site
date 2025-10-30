@@ -1,4 +1,5 @@
 import type { Dictionary } from '@/i18n/types';
+import Image from 'next/image';
 
 type ProjectsSectionProps = {
   content: Dictionary['projects'];
@@ -14,16 +15,16 @@ export default function ProjectsSection({ content }: ProjectsSectionProps) {
           <div className="space-y-16">
             {content.entries.map((project) => (
               <div key={project.name} className="space-y-6">
-                <div className="w-full h-80 bg-[var(--surface)] rounded-lg overflow-hidden relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-purple-600 to-purple-800 flex items-center justify-center">
-                    <div className="bg-black/20 backdrop-blur-sm rounded-lg p-8 w-4/5 h-4/5 flex items-center justify-center">
-                      <div className="text-white/80 text-center">
-                        <div className="text-6xl mb-4" aria-hidden="true">💻</div>
-                        <div className="text-sm">{project.imageryLabel}</div>
-                      </div>
-                    </div>
+                <div className="relative w-full aspect-[16/9] rounded-lg overflow-hidden bg-[var(--surface)]">
+                    <Image
+                      src={project.image.src}
+                      alt={project.image.alt}
+                      fill
+                      className="object-cover"
+                      sizes="(min-width: 1440px) 864px, 100vw"
+                      priority
+                    />
                   </div>
-                </div>
 
                 <div className="space-y-4 mb-9">
                   <h3 className="text-[var(--text-primary)] text-xl font-bold">{project.name}</h3>

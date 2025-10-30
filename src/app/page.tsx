@@ -4,6 +4,7 @@ import HeroSection from '@/components/HeroSection';
 import ExperienceSection from '@/components/ExperienceSection';
 import ProjectsSection from '@/components/ProjectsSection';
 import EducationSection from '@/components/EducationSection';
+import Footer from '@/components/Footer';
 import { LocaleTransitionProvider } from '@/components/LocaleTransitionProvider';
 import { TranslationProvider } from '@/contexts/TranslationContext';
 import { getDictionary } from '@/i18n/getDictionary';
@@ -35,6 +36,7 @@ export default async function HomePage() {
           <ProjectsSection content={dictionary.projects} />
           <EducationSection content={dictionary.education} />
         </main>
+        <Footer content={dictionary.footer} />
       </LocaleTransitionProvider>
     </TranslationProvider>
   );

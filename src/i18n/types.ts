@@ -3,6 +3,15 @@ export type ExperienceEntry = {
   period: string;
   role: string;
   description: string;
+  companyHref?: string;
+  logo?: {
+    src: string;
+    alt: string;
+  };
+  country?: {
+    src: string;
+    alt: string;
+  };
 };
 
 export type EducationEntry = {
@@ -14,7 +23,7 @@ export type EducationEntry = {
 
 export type ProjectEntry = {
   name: string;
-  imageryLabel: string;
+  image: { src: string; alt: string };
   description: string;
   badges: string[];
   primaryActionLabel: string;
@@ -59,5 +68,12 @@ export type Dictionary = {
     githubLabel: string;
     githubValue: string;
     githubText?: string;
+  };
+  footer: {
+    quote: {
+      text: string;
+      author?: string;
+    };
+    copyright: string;
   };
 };

@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { useTranslations } from '@/contexts/TranslationContext';
 
@@ -19,12 +19,6 @@ const ensureExternalHref = (value: string) => {
 export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
   const { dictionary } = useTranslations();
   const contact = dictionary.contact;
-  const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => {
-    setIsMounted(true);
-    return () => setIsMounted(false);
-  }, []);
 
   useEffect(() => {
     if (isOpen) {
@@ -56,7 +50,11 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
     };
   }, [isOpen, onClose]);
 
-  if (!isOpen || !isMounted) {
+  if (!isOpen) {
+    return null;
+  }
+
+  if (typeof document === 'undefined' || !document.body) {
     return null;
   }
 

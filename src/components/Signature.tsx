@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useTheme } from '@/contexts/ThemeContext';
 
 export default function Signature({
@@ -16,10 +17,13 @@ export default function Signature({
     : '/signature_white_raster.svg';
 
   return (
-    <img
+    <Image
       src={signatureSrc}
       alt={alt}
+      width={804}
+      height={1092}
       className={className}
+      priority={false}
     />
   );
 }

@@ -12,6 +12,11 @@ export default function Header() {
   const { dictionary, locale } = useTranslations();
   const { animateLocaleChange, isLocaleTransitioning } = useLocaleTransition();
   const router = useRouter();
+  const updateLocaleCookie = (doc: Document, win: Window, targetLocale: Locale) => {
+    const maxAge = 60 * 60 * 24 * 365;
+    const secureAttribute = win.location.protocol === 'https:' ? '; Secure' : '';
+    doc.cookie = `locale=${targetLocale}; path=/; max-age=${maxAge}; SameSite=Lax${secureAttribute}`;
+  };
 
   const localeOptions = useMemo<Array<{ value: Locale; label: string }>>(
     () =>
@@ -28,9 +33,9 @@ export default function Header() {
     }
 
     const transition = animateLocaleChange();
-    const maxAge = 60 * 60 * 24 * 365;
-    const secureAttribute = window.location.protocol === 'https:' ? '; Secure' : '';
-    document.cookie = `locale=${targetLocale}; path=/; max-age=${maxAge}; SameSite=Lax${secureAttribute}`;
+    if (typeof document !== 'undefined' && typeof window !== 'undefined') {
+      updateLocaleCookie(document, window, targetLocale);
+    }
     router.refresh();
     await transition;
   };

@@ -4,105 +4,147 @@ export const dictionary: Dictionary = {
   metadata: {
     title: "Gabriel®",
     description:
-      "Gabriel Mendonça - Developer passionate about the beauty of digital minimalism",
+      "New person, same old mistakes.",
   },
   layout: {
-    brandName: "Gabriel®",
+    brandName: "Gabriel",
   },
   header: {
-    contactCta: "Contact",
+    contactCta: "Contato",
   },
   hero: {
-    sectionTitle: "About me",
     paragraphs: [
-      "Developer passionate about the beauty of digital minimalism. I believe in the strength of simple solutions, clear visuals, and user experiences that inspire and deliver.",
-      "With experience across UX/UI design, front-end, and back-end development, I aim to build products that balance efficiency, accessibility, and visual impact.",
-    ],
-    signatureAlt: "Gabriel's signature",
-    avatarLabel: "Profile icon",
+      "Sou movido por ideias, pela natureza e o brilho humano nos encontros autênticos. Trago comigo valores de honestidade e respeito, e um desejo constante de inspirar outros – não aceito mediocridade, nem minha nem de ninguém, apenas a busca pela melhor versão.",
+      "É na cooperação genuína, criando projetos que importam, e nos momentos reais com aqueles que amo que encontro meu sentido de estar vivo."
+      ],
+    signatureAlt: "Assinatura",
+    avatarLabel: "Ícone de perfil",
   },
   experience: {
-    sectionTitle: "Experience",
+    sectionTitle: "Experiência",
     entries: [
       {
         company: "ACCENTURE",
         period: "06/2025",
         role: "Trainee",
         description:
-          "As a freelancer at AFPA, I worked in the Social Media and IT divisions. Those experiences helped me strengthen my problem-solving and data-management skills.",
+          "Atuo em uma das maiores consultorias globais, com mais de 600 mil funcionários em 120+ países, onde desenvolvo soluções tecnológicas inovadoras em um ambiente verdadeiramente multicultural. Possuo sólida experiência em metodologias de desenvolvimento para industria e colaboração direta com clientes internacionais, entregando resultados que impulsionam a transformação digital dos negócios.",
+        companyHref: "https://www.accenture.com/",
+        logo: {
+          src: "/logos/accenture.svg",
+          alt: "Logo da Accenture",
+        },
+        country: {
+          src: "/flags/european-union.svg",
+          alt: "Bandeira da União Europeia",
+        },
       },
       {
         company: "SYSTEMA",
         period: "06/2024 - 06/2025",
         role: "Trainee",
         description:
-          "I have the opportunity to collaborate on large-scale projects and learn from top professionals, building both back-end and front-end solutions for legacy systems and modern applications.",
+          "Participei de projetos para grandes empresas, aprendi diretamente com profissionais muito experientes e pude colocar a mão na massa em tudo, desde sistemas mais antigos até aplicações modernas criando uma base de desenvolvimento de software para Automação e Manufatura na Indústria com SAP",
+        companyHref: "https://www.systema.com/",
+        logo: {
+          src: "/logos/systema.svg",
+          alt: "Logo da Systema",
+        },
+        country: {
+          src: "/flags/germany.svg",
+          alt: "Bandeira da Alemanha",
+        },
       },
       {
         company: "WG",
         period: "2021 - 2024",
         role: "Freelancer",
         description:
-          "At WG, a footwear representative with over 30 years in the market, I led initiatives such as creating and maintaining a website and building the company's cloud-based backend for data and invoice management.",
+          "Na WG, uma representante de calçados com mais de 30 anos de mercado, tive a oportunidade de trabalhar em projetos como criação e manutenção de um site, desenvolvi minhas habilidades em cloud na construção de um back-end estrutural da empresa para gerenciamento de dados e notas fiscais.",
+        companyHref: "https://www.wg.com.br/",
+        logo: {
+          src: "/logos/wg.svg",
+          alt: "Logo da WG",
+        },
+        country: {
+          src: "/flags/brazil.svg",
+          alt: "Bandeira do Brasil",
+        },
       },
     ],
   },
   education: {
-    sectionTitle: "Education",
+    sectionTitle: "Formação",
     entries: [
       {
         institution: "UCSAL",
         period: "2021 - 2026/6",
-        degree: "Software Engineering",
+        degree: "Curso Engenharia de Software",
         description:
-          "Software Engineering student at UCSal, an institution recognized for academic excellence and for preparing high-level technology professionals. The program offers a solid foundation in programming, interface design, requirements engineering, testing, agile development, and cybersecurity.",
+          "Curso Engenharia de Software na UCSal, instituição reconhecida pela excelência acadêmica e formação de profissionais qualificados em tecnologia. O curso proporciona base sólida em programação, design de interfaces, engenharia de requisitos, testes, desenvolvimento ágil e segurança cibernética.",
       },
       {
         institution: "HarvardX CS50x",
         period: "2022 - 2023",
-        degree: "Introduction to Computer Science",
+        degree: "Introdução à Ciência da Computação",
         description:
-          "I completed Harvard University's renowned CS50x, an intensive introduction to computer science. The course strengthened my ability to solve complex problems through computational thinking, an essential skill for effective software development.",
+          "Concluí o curso CS50x da Universidade de Harvard, uma introdução intensiva e renomada à ciência da computação. Este curso aprimorou minha capacidade de resolver problemas complexos por meio do pensamento computacional, uma habilidade essencial para o desenvolvimento eficaz de software.",
       },
       {
         institution: "Cultura Inglesa",
         period: "2012 -",
-        degree: "Fluent English",
+        degree: "Inglês Fluente",
         description:
-          "I started learning English at age six in school, completed the Advanced level at Cultura Inglesa, and have continued practicing through international travel and ongoing immersion in the language.",
+          "Comecei a aprender inglês aos 6 anos no colégio, completei o nível Avançado na Cultura Inglesa e aprimorei o idioma em viagens internacionais, mantendo contato contínuo com o inglês.",
       },
       {
         institution: "One Bit Code Pro",
         period: "2021 - 2023",
-        degree: "Complete Development Program",
+        degree: "Programa Completo de Desenvolvimento",
         description:
-          "I joined the One Bit Code Pro program, a comprehensive track covering Front-End, Back-End, Mobile, Python, Ruby, Ruby on Rails, and No-Code development.",
+          "Participei do One Bit Code Pro, um programa completo que cobriu Front-End, Back-End, Mobile, Python, Ruby, Ruby on Rails e No Code.",
       },
     ],
   },
   projects: {
-    sectionTitle: "Projects",
+    sectionTitle: "Projetos",
     entries: [
       {
-        name: "Alertpix",
-        imageryLabel: "Alertpix interface",
+        name: "ICE",
+        image: { src: '/projects/ICE-B-1.png', alt: 'Homepage da ICE' },
         description:
-          "With customizable widgets, straightforward setup, and the lowest fees on the market, Alertpix offers an efficient and affordable way for creators to receive financial support from their communities.",
-        badges: ["UI/UX", "Desktop", "Real product"],
-        primaryActionLabel: "View on Figma",
-        primaryActionHref: "https://example.com/alertpix",
+          "Startup de deep tech com a missão de implementar IA de forma estratégica e escalável. Oferecemos soluções personalizadas para +3 empresas B2B e B2C em 2 países.",
+        badges: ["B2B", "B2C"],
+        primaryActionLabel: "Ver",
+        primaryActionHref: "https://iceoficial.com/",
+      },
+      {
+        name: "Omni",
+        image: { src: '/projects/Omni-B-2.png', alt: 'Homepage da ICE' },
+        description:
+          "Ecossistema de agentes de IA que democratiza o acesso à inteligência artificial. Combinamos diversos modelos e ferramentas especializadas em uma interface intuitiva, atendendo +1000 usuários com soluções práticas.",
+        badges: ["IA", "Agentes"],
+        primaryActionLabel: "Testar",
+        primaryActionHref: "https://omni-xi.vercel.app/",
       },
     ],
   },
   contact: {
-    title: "Contact",
+    title: "Contato",
     emailLabel: "Email",
-    emailValue: "gabriel@exemplo.com",
+    emailValue: "gabrielrm.email@gmail.com",
     linkedinLabel: "LinkedIn",
-    linkedinValue: "linkedin.com/in/gabriel",
-    linkedinText: "View LinkedIn",
+    linkedinValue: "https://www.linkedin.com/in/gabriel-ribeiro-mendon%C3%A7a-910692269/",
+    linkedinText: "Visitar LinkedIn",
     githubLabel: "GitHub",
     githubValue: "github.com/gabriel",
-    githubText: "Open GitHub",
+    githubText: "Abrir GitHub",
+  },
+  footer: {
+    quote: {
+      text: "A imaginação é o combustível que move cada linha de código.",
+      author: "Gabriel Ribeiro Mendonça",
+    },
+    copyright: "© {year} Gabriel®. Todos os direitos reservados.",
   },
 };
