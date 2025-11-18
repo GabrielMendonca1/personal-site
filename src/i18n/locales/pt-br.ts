@@ -14,13 +14,13 @@ export const dictionary: Dictionary = {
   },
   hero: {
     paragraphs: [
-      "Sou movido por ideias, pela natureza e o brilho humano nos encontros autênticos. Trago comigo valores de honestidade e respeito, e um desejo constante de inspirar outros – não aceito mediocridade, nem minha nem de ninguém, apenas a busca pela melhor versão.",
+      "Sou movido por ideias, pela natureza e o brilho humano nos encontros autênticos. Trago comigo valores de honestidade e respeito, e um desejo constante de inspirar outros – não aceito mediocridade, nem minha nem de ninguém.",
       "É na cooperação genuína, criando projetos que importam, e nos momentos reais com aqueles que amo que encontro meu sentido de estar vivo."
       ],
     signatureAlt: "Assinatura",
     avatarLabel: "Ícone de perfil",
     avatarImage: {
-      src: "/profile.png",
+      src: "/profile2.jpeg",
       alt: "Foto",
     },
   },

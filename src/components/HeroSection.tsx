@@ -19,8 +19,8 @@ export default function HeroSection({ content }: HeroSectionProps) {
                   <Image
                     src={content.avatarImage.src}
                     alt={content.avatarImage.alt}
-                    width={64}
-                    height={64}
+                    width={82}
+                    height={82}
                     className="h-full w-full object-cover"
                     priority
                   />

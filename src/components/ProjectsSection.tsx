@@ -45,30 +45,7 @@ export default function ProjectsSection({ content }: ProjectsSectionProps) {
                       ))}
                     </div>
 
-                    {project.primaryActionHref ? (
-                      <a
-                        href={project.primaryActionHref}
-                        target={project.primaryActionHref.startsWith('http') ? '_blank' : undefined}
-                        rel={project.primaryActionHref.startsWith('http') ? 'noopener noreferrer' : undefined}
-                        className="bg-[var(--text-primary)] text-[var(--background)] px-4 py-2 rounded-full text-sm font-medium hover:opacity-80 transition-opacity flex items-center gap-2"
-                      >
-                        {project.primaryActionLabel}
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                        </svg>
-                      </a>
-                    ) : (
-                      <button
-                        type="button"
-                        value={project.primaryActionLabel}
-                        className="bg-[var(--text-primary)] text-[var(--background)] px-4 py-2 rounded-full text-sm font-medium hover:opacity-80 transition-opacity flex items-center gap-2"
-                      >
-                        {project.primaryActionLabel}
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                        </svg>
-                      </button>
-                    )}
+                    {/* Disabled action button removed per request */}
                   </div>
                 </div>
               </div>

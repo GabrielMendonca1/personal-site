@@ -13,13 +13,13 @@ export const dictionary: Dictionary = {
   },
   hero: {
     paragraphs: [
-      "I am moved by ideas, by nature, and by the human spark that emerges in authentic encounters. I carry with me values of honesty and respect, along with a constant desire to inspire others – I do not accept mediocrity, neither mine nor anyone’s. Only the pursuit of the best version possible.",
+      "I am moved by ideas, by nature, and by the human spark that emerges in authentic encounters. I carry with me values of honesty and respect, along with a constant desire to inspire others – I do not accept mediocrity, neither mine nor anyone’s.",
       "It is in genuine cooperation, in building projects that matter, and in real moments with those I love that I find my sense of being alive."
     ],
     signatureAlt: "Signature",
     avatarLabel: "Profile icon",
     avatarImage: {
-      src: "/profile.png",
+      src: "/profile2.jpeg",
       alt: "Photo",
     },
   },
@@ -114,7 +114,7 @@ export const dictionary: Dictionary = {
     entries: [
       {
         name: "ICE",
-        image: { src: '/projects/ICE-B-1.png', alt: 'ICE Homepage' },
+        image: { src: '/projects/ICE-B-2.png', alt: 'ICE Homepage' },
         description:
           "Deep tech startup with the mission of implementing AI strategically and at scale. We deliver customized solutions for 3+ B2B and B2C companies across 2 countries.",
         badges: ["B2B", "B2C"],

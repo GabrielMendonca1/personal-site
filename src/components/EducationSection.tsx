@@ -18,7 +18,7 @@ export default function EducationSection({ content }: EducationSectionProps) {
                 <div className="text-[var(--text-muted)] text-[14px] mb-1">{entry.period}</div>
                 <div className="text-[var(--text-secondary)] text-[14px] mb-2 font-medium">{entry.degree}</div>
                 <p className="text-[var(--text-muted)] text-[15px] leading-relaxed">
-                  {entry.description}
+                  {entry.description} 
                 </p>
               </div>
             ))}
