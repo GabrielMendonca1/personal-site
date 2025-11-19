@@ -32,7 +32,7 @@ export const dictionary: Dictionary = {
         period: "06/2025",
         role: "Trainee",
         description:
-          "Atuo como trainee na Accenture, uma das maiores consultorias globais de TI e transformação digital (mais de 600 mil funcionários em 120+ países), onde crio soluções tecnológicas inovadoras usando SAP em um ambiente genuinamente multicultural.",
+          "Atuo como trainee na Accenture, uma das maiores consultorias globais de TI e transformação digital (mais de 600 mil funcionários em 120+ países), onde crio soluções tecnológicas inovadoras com SAP.",
         companyHref: "https://www.accenture.com/",
         logo: {
           src: "/logos/accenture.svg",
@@ -48,7 +48,7 @@ export const dictionary: Dictionary = {
         period: "06/2024 - 06/2025",
         role: "Trainee",
         description:
-          "Participei de projetos para grandes empresas, aprendi diretamente com profissionais muito experientes e pude colocar a mão na massa em tudo, desde sistemas mais antigos até aplicações modernas criando uma base de desenvolvimento de software para Automação e Manufatura na Indústria com SAP",
+          "Participei de projetos para grandes empresas, aprendi diretamente com profissionais muito experientes e pude colocar a mão na massa em tudo, desde sistemas mais antigos até aplicações modernas criando uma base de desenvolvimento de software para Automação e Manufatura na Indústria",
         companyHref: "https://www.systema.com/",
         logo: {
           src: "/logos/systema.svg",
@@ -119,7 +119,7 @@ export const dictionary: Dictionary = {
         description:
           "Startup de deep tech com a missão de implementar IA de forma estratégica e escalável. Oferecemos soluções personalizadas para +3 empresas B2B e B2C em 2 países.",
         badges: ["B2B", "B2C"],
-        primaryActionLabel: "Ver",
+        primaryActionLabel: "Visitar",
         primaryActionHref: "https://iceoficial.com/",
       },
       {
