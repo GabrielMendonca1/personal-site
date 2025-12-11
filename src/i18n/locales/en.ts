@@ -6,15 +6,15 @@ export const dictionary: Dictionary = {
     description: "New person, same old mistakes.",
   },
   layout: {
-    brandName: "Gabriel",
+    brandName: "G",
   },
   header: {
     contactCta: "Contact",
   },
   hero: {
     paragraphs: [
-      "I am moved by ideas, by nature, and by the human spark that emerges in authentic encounters. I carry with me values of honesty and respect, along with a constant desire to inspire others – I do not accept mediocrity, neither mine nor anyone’s.",
-      "It is in genuine cooperation, in building projects that matter, and in real moments with those I love that I find my sense of being alive."
+      "I am driven by ideas, nature, and the human spark in authentic encounters. I carry with me values of honesty and respect, and a constant desire to inspire others – I do not accept mediocrity.",
+      "It is in genuine cooperation, creating projects that matter, and in real moments with those I love that I find my meaning of being alive.",
     ],
     signatureAlt: "Signature",
     avatarLabel: "Profile icon",
@@ -29,9 +29,9 @@ export const dictionary: Dictionary = {
       {
         company: "ACCENTURE",
         period: "06/2025",
-        role: "Trainee",
+        role: "Software Engineer",
         description:
-          "I work in one of the largest global consulting firms, with more than 600 thousand employees in 120+ countries, where I develop innovative technological solutions in a truly multicultural environment. I have solid experience in development methodologies for the industry and direct collaboration with international clients, delivering results that drive the digital transformation of businesses.",
+          "I work as a junior developer at Accenture, one of the largest global IT and digital transformation consultancies (over 600k employees in 120+ countries), where I create solutions using SAP and various other technologies.",
         companyHref: "https://www.accenture.com/",
         logo: {
           src: "/logos/accenture.svg",
@@ -44,10 +44,10 @@ export const dictionary: Dictionary = {
       },
       {
         company: "SYSTEMA",
-        period: "06/2024 - 06/2025",
+        period: "2024 - 2025",
         role: "Trainee",
         description:
-          "I participated in projects for large companies, learning directly from highly experienced professionals. I worked across a wide range of systems, from legacy applications to modern solutions, building a strong foundation in software development for Automation and Manufacturing in the industry with SAP.",
+          "I participated in projects for major companies, learning directly from highly experienced professionals, ranging from legacy systems to modern applications, creating a software development foundation for Automation and Manufacturing in the Industry.",
         companyHref: "https://www.systema.com/",
         logo: {
           src: "/logos/systema.svg",
@@ -63,7 +63,7 @@ export const dictionary: Dictionary = {
         period: "2021 - 2024",
         role: "Freelancer",
         description:
-          "At WG, a footwear representative company with over 30 years in the market, I had the opportunity to work on projects such as creating and maintaining a website, as well as developing cloud-based internal systems, building a backend structure for data and invoice management.",
+          "At WG, a footwear representative with over 30 years in the market, I had the opportunity to work on diverse projects with more freedom. I developed my cloud skills by building a company back-end for data and invoice management.",
         companyHref: "https://www.wg.com.br/",
         logo: {
           src: "/logos/wg.svg",
@@ -80,32 +80,32 @@ export const dictionary: Dictionary = {
     sectionTitle: "Education",
     entries: [
       {
+        institution: "HarvardX CS50x",
+        period: "2021 - 2023",
+        degree: "Computer Science",
+        description:
+          "I completed the CS50x course at Harvard University, a renowned intensive introduction to computer science. This course honed my ability to solve complex problems through logical thinking.",
+      },
+      {
         institution: "UCSAL",
         period: "2021 - 2026/6",
         degree: "Software Engineering",
         description:
-          "Software Engineering at UCSal, an institution recognized for academic excellence and the preparation of highly qualified technology professionals. The course provides a solid foundation in programming, interface design, requirements engineering, testing, agile development, and cybersecurity.",
-      },
-      {
-        institution: "HarvardX CS50x",
-        period: "2022 - 2023",
-        degree: "Introduction to Computer Science",
-        description:
-          "I completed the CS50x course from Harvard University, an intensive and globally recognized introduction to Computer Science. The course strengthened my ability to solve complex problems through computational thinking, an essential skill for effective software development.",
+          "I study Software Engineering at UCSal, an institution recognized for academic excellence and training qualified professionals in technology.",
       },
       {
         institution: "Cultura Inglesa",
-        period: "2012 -",
+        period: "2012",
         degree: "Fluent English",
         description:
-          "I began learning English at age 6 during school, completed the Advanced level at Cultura Inglesa, and improved my language skills through international travel, maintaining continuous contact with English.",
+          "I started learning English at age 6, completed the Advanced level at Cultura Inglesa, and improved the language during international trips, maintaining continuous contact with English.",
       },
       {
         institution: "One Bit Code Pro",
         period: "2021 - 2023",
         degree: "Complete Development Program",
         description:
-          "I participated in the One Bit Code Pro program, a complete track covering Front-End, Back-End, Mobile, Python, Ruby, Ruby on Rails, and No Code.",
+          "I participated in One Bit Code Pro, a complete program that covered Front-End, Back-End, Mobile, Python, Ruby, Ruby on Rails, and No Code.",
       },
     ],
   },
@@ -113,19 +113,19 @@ export const dictionary: Dictionary = {
     sectionTitle: "Projects",
     entries: [
       {
-        name: "ICE",
-        image: { src: '/projects/ICE-B-2.png', alt: 'ICE Homepage' },
+        name: "ARC",
+        image: { src: "/projects/ICE-B-2.png", alt: "ICE" },
         description:
-          "Deep tech startup with the mission of implementing AI strategically and at scale. We deliver customized solutions for 3+ B2B and B2C companies across 2 countries.",
+          "Deep tech startup with a mission to implement AI sustainably and scalably. We offer customized solutions for 3+ B2B and B2C companies in 2 countries.",
         badges: ["B2B", "B2C"],
-        primaryActionLabel: "View",
+        primaryActionLabel: "Visit",
         primaryActionHref: "https://iceoficial.com/",
       },
       {
         name: "Omni",
-        image: { src: '/projects/Omni-B-2.png', alt: 'Omni Homepage' },
+        image: { src: "/projects/Omni-B-2.png", alt: "Omni" },
         description:
-          "AI agent ecosystem that democratizes access to artificial intelligence. We combine multiple models and specialized tools in a single intuitive interface, serving 1000+ users with practical solutions.",
+          "AI agent ecosystem that democratizes access to artificial intelligence. We combine various models and specialized tools in an intuitive interface, serving 1000+ users with practical solutions.",
         badges: ["AI", "Agents"],
         primaryActionLabel: "Try",
         primaryActionHref: "https://omni-xi.vercel.app/",
@@ -136,18 +136,20 @@ export const dictionary: Dictionary = {
     title: "Contact",
     emailLabel: "Email",
     emailValue: "gabrielrm.email@gmail.com",
+    businessEmailLabel: "Business Email",
+    businessEmailValue: "gabriel@arc-corporation.com",
     linkedinLabel: "LinkedIn",
-    linkedinValue: "https://www.linkedin.com/in/gabriel-ribeiro-mendon%C3%A7a-910692269/",
+    linkedinValue:
+      "https://www.linkedin.com/in/gabriel-ribeiro-mendon%C3%A7a-910692269/",
     linkedinText: "Visit LinkedIn",
     githubLabel: "GitHub",
-    githubValue: "github.com/gabriel",
+    githubValue: "https://github.com/GabrielMendonca1",
     githubText: "Open GitHub",
   },
   footer: {
     quote: {
-      text: "Imagination is the fuel that drives every line of code.",
-      author: "Gabriel Ribeiro Mendonça",
+      text: "Pressure is a privilege.",
     },
-    copyright: "© {year} Gabriel®. All rights reserved.",
+    copyright: "© {year} Gabriel®.",
   },
 };

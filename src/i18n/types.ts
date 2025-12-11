@@ -66,6 +66,8 @@ export type Dictionary = {
     title: string;
     emailLabel: string;
     emailValue: string;
+    businessEmailLabel?: string;
+    businessEmailValue?: string;
     linkedinLabel: string;
     linkedinValue: string;
     linkedinText?: string;

@@ -36,7 +36,7 @@ export default async function HomePage() {
           <ProjectsSection content={dictionary.projects} />
           <EducationSection content={dictionary.education} />
         </main>
-        <Footer content={dictionary.footer} />
+        <Footer content={dictionary.footer} contact={dictionary.contact} />
       </LocaleTransitionProvider>
     </TranslationProvider>
   );

@@ -9,10 +9,10 @@ type HeroSectionProps = {
 
 export default function HeroSection({ content }: HeroSectionProps) {
   return (
-    <section className="bg-[var(--background)] text-[var(--text-primary)] relative overflow-hidden pb-20 md:pt-40 pt-20">
-      <div className="flex items-center justify-center p-8">
-        <div className="max-w-4xl w-full flex items-center justify-between relative">
-          <div className="flex-1 max-w-md">
+    <section className="bg-[var(--background)] text-[var(--text-primary)] relative overflow-hidden">
+      <div className="flex items-center justify-center p-8 h-screen">
+        <div className="max-w-3xl w-full flex items-center justify-between relative">
+          <div className="flex-1 max-w-lg">
             <div className="mb-10">
               <div className="w-14 h-14 bg-[var(--surface)] rounded-full mb-2 flex items-center justify-center overflow-hidden">
                 {content.avatarImage ? (

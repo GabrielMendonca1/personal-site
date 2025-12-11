@@ -8,9 +8,9 @@ type ExperienceSectionProps = {
 
 export default function ExperienceSection({ content }: ExperienceSectionProps) {
   return (
-    <section className="bg-[var(--background)] text-[var(--text-primary)] flex items-center justify-center py-20 p-8">
-      <div className="max-w-4xl w-full">
-        <div className="max-w-2xl">
+    <section className="bg-[var(--background)] text-[var(--text-primary)] flex p-8 items-center justify-center">
+      <div className="max-w-3xl w-full h-screen">
+        <div className="">
           <h2 className="text-[var(--text-primary)] text-lg font-bold mb-6">{content.sectionTitle}</h2>
 
           <div className="space-y-8">
