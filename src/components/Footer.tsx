@@ -17,7 +17,7 @@ export default function Footer({ content, contact }: FooterProps) {
 
   return (
     <footer className="bg-[var(--background)] py-12 transition-colors duration-300">
-      <div className="mx-auto max-w-4xl px-8">
+      <div className="mx-auto max-w-3xl px-8">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-8">
           
           {/* Signature */}

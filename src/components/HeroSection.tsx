@@ -10,7 +10,7 @@ type HeroSectionProps = {
 export default function HeroSection({ content }: HeroSectionProps) {
   return (
     <section className="bg-[var(--background)] text-[var(--text-primary)] relative overflow-hidden">
-      <div className="flex items-center justify-center p-8 h-screen">
+      <div className="flex items-center justify-center p-8 min-h-[100dvh]">
         <div className="max-w-3xl w-full flex items-center justify-between relative">
           <div className="flex-1 max-w-lg">
             <div className="mb-10">

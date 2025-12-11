@@ -7,7 +7,7 @@ type ProjectsSectionProps = {
 
 export default function ProjectsSection({ content }: ProjectsSectionProps) {
   return (
-    <section className="bg-[var(--background)] mb-[10%] text-[var(--text-primary)] p-8 flex items-center justify-center">
+    <section className="bg-[var(--background)] md:mt-[10%] md:my-0 my-[15%] text-[var(--text-primary)] p-8 flex items-center justify-center">
       <div className="max-w-3xl w-full">
         <div className="">
           <h2 className="text-[var(--text-primary)] text-lg font-bold mb-6">{content.sectionTitle}</h2>
