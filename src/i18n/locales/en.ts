@@ -29,9 +29,9 @@ export const dictionary: Dictionary = {
       {
         company: "ACCENTURE",
         period: "06/2025",
-        role: "Software Engineer",
+        role: "Systems Developer",
         description:
-          "I work as a junior developer at Accenture, one of the largest global IT and digital transformation consultancies (over 600k employees in 120+ countries), where I create solutions using SAP and various other technologies.",
+          "I work as a junior systems developer at Accenture, one of the largest global IT and digital transformation consultancies (over 600k employees in 120+ countries), where I create solutions using SAP and various other technologies.",
         companyHref: "https://www.accenture.com/",
         logo: {
           src: "/logos/accenture.svg",

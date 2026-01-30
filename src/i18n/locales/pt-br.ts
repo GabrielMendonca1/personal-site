@@ -29,9 +29,9 @@ export const dictionary: Dictionary = {
       {
         company: "ACCENTURE",
         period: "06/2025",
-        role: "Software Engineer",
+        role: "Desenvolvedor de Sistemas",
         description:
-          "Atuo como dev junior na Accenture, uma das maiores consultorias globais de TI e transformação digital (mais de 600 mil funcionários em 120+ países), onde crio soluções com SAP e diversas outras tecnologias.",
+          "Atuo como desenvolvedor de sistemas júnior na Accenture, uma das maiores consultorias globais de TI e transformação digital (mais de 600 mil funcionários em 120+ países), onde crio soluções com SAP e diversas outras tecnologias.",
         companyHref: "https://www.accenture.com/",
         logo: {
           src: "/logos/accenture.svg",
