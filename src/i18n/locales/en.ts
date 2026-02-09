@@ -28,10 +28,10 @@ export const dictionary: Dictionary = {
     entries: [
       {
         company: "ACCENTURE",
-        period: "06/2025",
+        period: "06/2025 - Present",
         role: "Systems Developer",
         description:
-          "I work as a junior systems developer at Accenture, one of the largest global IT and digital transformation consultancies (over 600k employees in 120+ countries), where I create solutions using SAP and various other technologies.",
+          "Today I work as a systems developer at Accenture, one of the largest global IT and digital transformation consultancies (over 600k employees in 120+ countries), where I create solutions using SAP and various other technologies.",
         companyHref: "https://www.accenture.com/",
         logo: {
           src: "/logos/accenture.svg",
@@ -119,16 +119,7 @@ export const dictionary: Dictionary = {
           "Deep tech startup with a mission to implement AI sustainably and scalably. We offer customized solutions for 3+ B2B and B2C companies in 2 countries.",
         badges: ["B2B", "B2C"],
         primaryActionLabel: "Visit",
-        primaryActionHref: "https://iceoficial.com/",
-      },
-      {
-        name: "Omni",
-        image: { src: "/projects/Omni-B-2.png", alt: "Omni" },
-        description:
-          "AI agent ecosystem that democratizes access to artificial intelligence. We combine various models and specialized tools in an intuitive interface, serving 1000+ users with practical solutions.",
-        badges: ["AI", "Agents"],
-        primaryActionLabel: "Try",
-        primaryActionHref: "https://omni-xi.vercel.app/",
+        primaryActionHref: "https://arc-corporation.com/",
       },
     ],
   },

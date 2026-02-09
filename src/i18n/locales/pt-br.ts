@@ -28,10 +28,10 @@ export const dictionary: Dictionary = {
     entries: [
       {
         company: "ACCENTURE",
-        period: "06/2025",
+        period: "06/2025 - Hoje",
         role: "Desenvolvedor de Sistemas",
         description:
-          "Atuo como desenvolvedor de sistemas júnior na Accenture, uma das maiores consultorias globais de TI e transformação digital (mais de 600 mil funcionários em 120+ países), onde crio soluções com SAP e diversas outras tecnologias.",
+          "Hoje atuo como desenvolvedor de sistemas na Accenture, uma das maiores consultorias globais de TI e transformação digital (mais de 600 mil funcionários em 120+ países), onde crio soluções com SAP e diversas outras tecnologias.",
         companyHref: "https://www.accenture.com/",
         logo: {
           src: "/logos/accenture.svg",
@@ -119,16 +119,7 @@ export const dictionary: Dictionary = {
           "Startup de deep tech com a missão de implementar IA de forma sustentável e escalável. Oferecemos soluções personalizadas para +3 empresas B2B e B2C em 2 países.",
         badges: ["B2B", "B2C"],
         primaryActionLabel: "Visitar",
-        primaryActionHref: "https://iceoficial.com/",
-      },
-      {
-        name: "Omni",
-        image: { src: "/projects/Omni-B-2.png", alt: "Omni" },
-        description:
-          "Ecossistema de agentes de IA que democratiza o acesso à inteligência artificial. Combinamos diversos modelos e ferramentas especializadas em uma interface intuitiva, atendendo +1000 usuários com soluções práticas.",
-        badges: ["IA", "Agentes"],
-        primaryActionLabel: "Testar",
-        primaryActionHref: "https://omni-xi.vercel.app/",
+        primaryActionHref: "https://arc-corporation.com/",
       },
     ],
   },
