@@ -27,19 +27,19 @@ export const dictionary: Dictionary = {
     sectionTitle: "Experiência",
     entries: [
       {
-        company: "ACCENTURE",
-        period: "06/2025 - Hoje",
-        role: "Desenvolvedor de Sistemas",
+        company: "SYSTEMA",
+        period: "01/2026 - Hoje",
+        role: "Desenvolvedor full stack",
         description:
-          "Hoje atuo como desenvolvedor de sistemas na Accenture, uma das maiores consultorias globais de TI e transformação digital (mais de 600 mil funcionários em 120+ países), onde crio soluções com SAP e diversas outras tecnologias.",
-        companyHref: "https://www.accenture.com/",
+          "Desenvolvimento de aplicações full-stack no ecossistema SAP, com foco em serviços backend (CAP/CDS), interfaces UI5/Fiori com integração OData, gestão de dados em PostgreSQL/HANA e experiência em SAP BTP e Digital Manufacturing.",
+        companyHref: "https://www.systema.com/",
         logo: {
-          src: "/logos/accenture.svg",
-          alt: "Logo da Accenture",
+          src: "/logos/systema.svg",
+          alt: "Logo da Systema",
         },
         country: {
-          src: "/flags/european-union.svg",
-          alt: "Bandeira da União Europeia",
+          src: "/flags/germany.svg",
+          alt: "Bandeira da Alemanha",
         },
       },
       {
