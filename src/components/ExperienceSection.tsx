@@ -27,7 +27,7 @@ export default function ExperienceSection({ content }: ExperienceSectionProps) {
                       <span>{entry.company}</span>
                       <div className="flex flex-wrap items-center gap-2">
                         {entry.logo?.src ? (
-                          <span className="inline-flex h-7 w-7 items-center justify-center overflow-hidden rounded-full border border-[var(--border)] bg-[var(--surface)] p-1">
+                          <span className="inline-flex h-7 w-7 items-center justify-center overflow-hidden rounded-full p-1">
                             <Image
                               src={entry.logo.src}
                               alt={entry.logo.alt}
@@ -55,7 +55,7 @@ export default function ExperienceSection({ content }: ExperienceSectionProps) {
                       <span>{entry.company}</span>
                       <div className="flex flex-wrap items-center gap-2">
                         {entry.logo?.src ? (
-                          <span className="inline-flex h-7 w-7 items-center justify-center overflow-hidden rounded-full border border-[var(--border)] bg-[var(--surface)] p-1">
+                          <span className="inline-flex h-7 w-7 items-center justify-center overflow-hidden rounded-full p-1">
                             <Image
                               src={entry.logo.src}
                               alt={entry.logo.alt}
@@ -82,9 +82,11 @@ export default function ExperienceSection({ content }: ExperienceSectionProps) {
                 </div>
                 <div className="text-[var(--text-muted)] text-[14px] mb-1">{entry.period}</div>
                 <div className="text-[var(--text-secondary)] text-[14px] mb-2 font-medium">{entry.role}</div>
-                <p className="text-[var(--text-muted)] text-[15px] leading-relaxed">
-                  {entry.description}
-                </p>
+                {entry.description ? (
+                  <p className="text-[var(--text-muted)] text-[15px] leading-relaxed">
+                    {entry.description}
+                  </p>
+                ) : null}
               </div>
             ))}
           </div>

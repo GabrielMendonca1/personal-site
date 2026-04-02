@@ -27,8 +27,20 @@ export const dictionary: Dictionary = {
     sectionTitle: "Experiência",
     entries: [
       {
+        company: "Accenture",
+        period: "04/2026",
+        role: "SAP Software Architect | Manufacturing Systems",
+        description:
+          "Arquitetura e desenvolvimento cloud de soluções escaláveis em SAP BTP, utilizando o modelo CAP e interfaces SAPUI5/Fiori. Crescendo junto com a Accenture com forte foco em inovação com IA no setor industrial.",
+        companyHref: "https://www.accenture.com/",
+        logo: {
+          src: "/logos/accenture.svg",
+          alt: "Logo da Accenture",
+        },
+      },
+      {
         company: "SYSTEMA",
-        period: "01/2026 - Hoje",
+        period: "01/2026 - 03/2026",
         role: "Desenvolvedor full stack",
         description:
           "Desenvolvimento de aplicações full-stack no ecossistema SAP, com foco em serviços backend (CAP/CDS), interfaces UI5/Fiori com integração OData, gestão de dados em PostgreSQL/HANA e experiência em SAP BTP e Digital Manufacturing.",

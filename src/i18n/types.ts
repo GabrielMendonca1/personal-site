@@ -2,7 +2,7 @@ export type ExperienceEntry = {
   company: string;
   period: string;
   role: string;
-  description: string;
+  description?: string;
   companyHref?: string;
   logo?: {
     src: string;
