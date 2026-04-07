@@ -13,13 +13,13 @@ export const dictionary: Dictionary = {
   },
   hero: {
     paragraphs: [
-      "Sou movido por ideias, pela natureza e o brilho humano nos encontros autênticos. Trago comigo valores de honestidade e respeito, e um desejo constante de inspirar outros – não aceito mediocridade.",
-      "É na cooperação genuína, criando projetos que importam, e nos momentos reais com aqueles que amo que encontro meu sentido de estar vivo.",
+      "Apaixonado por tecnologia, natureza e conexões genuínas. Trabalho com inteligência artificial, arquitetura de software e cloud.",
+      "Acredito que o melhor trabalho nasce quando qualidade técnica encontra propósito real.",
     ],
     signatureAlt: "Assinatura",
     avatarLabel: "Ícone de perfil",
     avatarImage: {
-      src: "/profile2.jpeg",
+      src: "/IMG_0174.jpg",
       alt: "Foto",
     },
   },
@@ -36,6 +36,10 @@ export const dictionary: Dictionary = {
         logo: {
           src: "/logos/accenture.svg",
           alt: "Logo da Accenture",
+        },
+        country: {
+          src: "/flags/brazil.svg",
+          alt: "Bandeira do Brasil",
         },
       },
       {

@@ -13,13 +13,13 @@ export const dictionary: Dictionary = {
   },
   hero: {
     paragraphs: [
-      "I am driven by ideas, nature, and the human spark in authentic encounters. I carry with me values of honesty and respect, and a constant desire to inspire others – I do not accept mediocrity.",
-      "It is in genuine cooperation, creating projects that matter, and in real moments with those I love that I find my meaning of being alive.",
+      "Passionate about technology, nature, and genuine connections. I work with artificial intelligence, software architecture, and cloud.",
+      "I believe the best work is born when technical quality meets real purpose.",
     ],
     signatureAlt: "Signature",
     avatarLabel: "Profile icon",
     avatarImage: {
-      src: "/profile2.jpeg",
+      src: "/IMG_0174.jpg",
       alt: "Photo",
     },
   },
@@ -36,6 +36,10 @@ export const dictionary: Dictionary = {
         logo: {
           src: "/logos/accenture.svg",
           alt: "Accenture Logo",
+        },
+        country: {
+          src: "/flags/brazil.svg",
+          alt: "Brazil Flag",
         },
       },
       {

@@ -14,7 +14,7 @@ export default function HeroSection({ content }: HeroSectionProps) {
         <div className="max-w-3xl w-full flex items-center justify-between relative">
           <div className="flex-1 max-w-lg">
             <div className="mb-10">
-              <div className="w-14 h-14 bg-[var(--surface)] rounded-full mb-2 flex items-center justify-center overflow-hidden">
+              <div className="w-24 h-24 md:w-[124px] md:h-[124px] bg-[var(--surface)] rounded-full mb-2 flex items-center justify-center overflow-hidden">
                 {content.avatarImage ? (
                   <Image
                     src={content.avatarImage.src}
@@ -64,6 +64,7 @@ export default function HeroSection({ content }: HeroSectionProps) {
                   <span className="h-[4px] w-[100px] bg-[var(--text-muted)] rounded-full"></span>
                 </div>
               </div>
+
             </div>
 
             <div>

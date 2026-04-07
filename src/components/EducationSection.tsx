@@ -6,8 +6,8 @@ type EducationSectionProps = {
 
 export default function EducationSection({ content }: EducationSectionProps) {
   return (
-    <section className="bg-[var(--background)] text-[var(--text-primary)] md:mt-[10%] flex items-center p-8 justify-center">
-      <div className="max-w-3xl w-full min-h-[100dvh]">
+    <section className="bg-[var(--background)] min-h-[100dvh] text-[var(--text-primary)] flex items-center p-8 justify-center">
+      <div className="max-w-3xl w-full">
         <div className="">
           <h2 className="text-[var(--text-primary)] text-lg font-bold mb-6">{content.sectionTitle}</h2>
 
