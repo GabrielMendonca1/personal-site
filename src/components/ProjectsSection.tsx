@@ -15,7 +15,19 @@ export default function ProjectsSection({ content }: ProjectsSectionProps) {
           <div className="space-y-16">
             {content.entries.map((project) => (
               <div key={project.name} className="space-y-6">
-                <div className="relative w-full aspect-[16/9] rounded-lg overflow-hidden bg-[var(--surface)]">
+                {project.primaryActionHref ? (
+                  <a href={project.primaryActionHref} target="_blank" rel="noopener noreferrer" className="block relative w-full aspect-[16/9] rounded-lg overflow-hidden bg-[var(--surface)] hover:opacity-90 transition-opacity">
+                    <Image
+                      src={project.image.src}
+                      alt={project.image.alt}
+                      fill
+                      className="object-cover"
+                      sizes="(min-width: 1440px) 864px, 100vw"
+                      priority
+                    />
+                  </a>
+                ) : (
+                  <div className="relative w-full aspect-[16/9] rounded-lg overflow-hidden bg-[var(--surface)]">
                     <Image
                       src={project.image.src}
                       alt={project.image.alt}
@@ -25,9 +37,16 @@ export default function ProjectsSection({ content }: ProjectsSectionProps) {
                       priority
                     />
                   </div>
+                )}
 
                 <div className="space-y-4 mb-9">
-                  <h3 className="text-[var(--text-primary)] text-xl font-bold">{project.name}</h3>
+                  {project.primaryActionHref ? (
+                    <a href={project.primaryActionHref} target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
+                      <h3 className="text-[var(--text-primary)] text-xl font-bold">{project.name}</h3>
+                    </a>
+                  ) : (
+                    <h3 className="text-[var(--text-primary)] text-xl font-bold">{project.name}</h3>
+                  )}
 
                   <p className="text-[var(--text-muted)] text-[15px] leading-relaxed">
                     {project.description}

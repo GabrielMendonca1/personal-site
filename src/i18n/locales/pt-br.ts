@@ -13,8 +13,8 @@ export const dictionary: Dictionary = {
   },
   hero: {
     paragraphs: [
-      "Apaixonado por tecnologia, natureza e conexões genuínas. Trabalho com inteligência artificial, arquitetura de software e cloud.",
-      "Acredito que o melhor trabalho nasce quando qualidade técnica encontra propósito real.",
+      "Apaixonado por tecnologia e a vida. Trabalho com inteligência artificial, arquitetura de software e cloud.",
+      "Acredito que o melhor trabalho nasce quando perfeccionismo encontra propósito.",
     ],
     signatureAlt: "Assinatura",
     avatarLabel: "Ícone de perfil",
