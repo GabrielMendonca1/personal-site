@@ -1,17 +1,20 @@
-import './globals.css';
-import type { ReactNode } from 'react';
-import { ThemeProvider } from '@/contexts/ThemeContext';
-import { geistSans, geistMono } from '@/styles/fonts';
-import { getRequestLocale } from '@/i18n/getRequestLocale';
+import type { Metadata } from "next";
+import "./globals.css";
 
-export default async function RootLayout({ children }: { children: ReactNode }) {
-  const locale = await getRequestLocale();
+export const metadata: Metadata = {
+  title: "Gabriel Mendonça - About Me",
+  description:
+    "A personal timeline of Gabriel Mendonça's work, projects, and ideas.",
+};
 
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <html lang={locale} suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <ThemeProvider>{children}</ThemeProvider>
-      </body>
+    <html lang="en">
+      <body>{children}</body>
     </html>
   );
 }
