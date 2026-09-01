@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Gabriel Mendonça - About Me",
+  title: "G",
   description:
     "A personal timeline of Gabriel Mendonça's work, projects, and ideas.",
 };
