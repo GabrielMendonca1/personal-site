@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Gabriel Mendonça — personal site
 
-## Getting Started
+A Next.js personal site with a small, repository-local writing system.
 
-First, run the development server:
+## Requirements
+
+Node.js 22.18 or newer is required (the writing tests use native TypeScript type stripping).
+
+## Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open <http://localhost:3000>. Environment defaults are documented in `.env.example`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Writing
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Articles live in `content/writing` as trusted local MDX. Metadata is validated, posts are date/order sorted, and draft visibility is gated by environment. See [`docs/writing.md`](docs/writing.md) for the frontmatter contract, available components, editorial checklist, and safe build command.
 
-## Learn More
+```bash
+npm run test:writing
+npm run lint
+SHOW_DRAFTS=1 NEXT_DIST_DIR=.next-writing-build npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The isolated build directory protects a running development server's `.next` cache. Draft `noindex` metadata is not access control. This repository workflow does not deploy the site.

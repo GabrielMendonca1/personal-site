@@ -30,8 +30,13 @@
   },
   "include": [
     "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "next.config.ts",
+    ".next-production-build/types/**/*.ts",
+    ".next-production-build/dev/types/**/*.ts",
+    ".next-language-build/types/**/*.ts",
+    ".next-language-build/dev/types/**/*.ts",
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts"
   ],

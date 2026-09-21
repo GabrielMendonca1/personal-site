@@ -1,0 +1,7 @@
+.next*/
+.claude/
+.pi/
+.DS_Store
+*.tsbuildinfo
+.env*
+!.env.example
