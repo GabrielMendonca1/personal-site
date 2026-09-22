@@ -13,6 +13,16 @@ export default function LanguageSwitcher({ locale, available = locales }: {
   useEffect(() => {
     document.documentElement.lang = locale === "pt" ? "pt-BR" : "en";
   }, [locale]);
+  useEffect(() => {
+    // The [lang] segment remounts the whole tree on refresh; keep entrance
+    // animations from replaying so the switch reads as a text swap, not a reload.
+    if (pending) {
+      document.documentElement.dataset.switchingLanguage = "";
+      return;
+    }
+    const timer = window.setTimeout(() => delete document.documentElement.dataset.switchingLanguage, 200);
+    return () => window.clearTimeout(timer);
+  }, [pending]);
   return (
     <nav className="language-switcher" aria-label={copy[locale].language} aria-busy={pending}>
       {available.map((language) => (

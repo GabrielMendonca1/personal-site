@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const description = copy[lang].description;
   return {
     metadataBase: new URL(siteUrl),
-    title, description,
+    title: "G", description,
     alternates: { canonical: "/" },
     openGraph: { title, description, url: "/", locale: lang === "pt" ? "pt_BR" : "en_US", alternateLocale: lang === "pt" ? "en_US" : "pt_BR" },
     twitter: { card: "summary", title, description },

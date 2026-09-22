@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: RouteProps): Promise<Metadata
   if (!post) return {};
 
   return {
-    title: `${post.title} — Gabriel Mendonça`,
+    title: `${post.title} — G`,
     description: post.description,
     robots: post.status === "draft" ? { index: false, follow: false } : undefined,
     alternates: { canonical: `/writing/${slug}` },

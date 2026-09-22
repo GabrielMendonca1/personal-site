@@ -292,3 +292,12 @@ a:focus-visible {
     transition-duration: .001ms !important;
   }
 }
+
+/* Language switch: the [lang] segment remounts; skip entrance animations so it does not look like a reload. */
+html[data-switching-language] .article > *,
+html[data-switching-language] .homepage > .writing,
+html[data-switching-language] .homepage > .footer,
+html[data-switching-language] .new-badge path,
+html[data-switching-language] .writing-header,
+html[data-switching-language] .writing-content > .writing-revealed { animation: none; }
+html[data-switching-language] .clock { transition: none; }

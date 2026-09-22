@@ -42,9 +42,13 @@ function Bunny({ sleeping }: { sleeping: boolean }) {
   );
 }
 
+// The server renders no time; after hydration, remounts (language switch) can start with the real value.
+let hydrated = false;
+
 function Footer({ locale }: { locale: Locale }) {
-  const [time, setTime] = useState<LocalTime | null>(null);
+  const [time, setTime] = useState<LocalTime | null>(() => hydrated ? getLocalTime(new Date(), locale) : null);
   useEffect(() => {
+    hydrated = true;
     const update = () => setTime(getLocalTime(new Date(), locale));
     update();
     const interval = window.setInterval(update, 60_000);
