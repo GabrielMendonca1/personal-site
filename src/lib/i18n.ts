@@ -17,7 +17,7 @@ export function preferredLocale(acceptLanguage: string | null, preference?: stri
   return languages.find(({ locale }) => isLocale(locale))?.locale as Locale | undefined ?? "en";
 }
 
-export const siteUrl = process.env.SITE_URL || "https://gabrielrm.org";
+export const siteUrl = process.env.SITE_URL || "https://gabrielrm.vercel.app";
 
 export const copy = {
   pt: {
